@@ -11,11 +11,12 @@
 
   <!-- 按日期滚动日志 -->
   <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+	  <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+		  <level>debug</level>
+	  </filter>
     <!-- 日志存放位置 -->
     <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
       <fileNamePattern>logs/%d{yyyy-MM-dd}.log</fileNamePattern>
-
-
       <!-- 保存30天历史 -->
       <maxHistory>30</maxHistory>
     </rollingPolicy>
