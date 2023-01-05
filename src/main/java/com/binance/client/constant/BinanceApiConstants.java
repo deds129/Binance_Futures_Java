@@ -44,5 +44,5 @@ public class BinanceApiConstants {
      * output format of the overridden toString methods. - Example
      * ToStringStyle.JSON_STYLE
      */
-    public static ToStringStyle TO_STRING_BUILDER_STYLE = ToStringStyle.SHORT_PREFIX_STYLE;
+    public static ToStringStyle TO_STRING_BUILDER_STYLE = ToStringStyle.JSON_STYLE;
 }
